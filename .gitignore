@@ -1,3 +1,6 @@
 # directories and files to exclude
 nvim/after
 packer/
+#when running it
+nvim/plugin/packer_compiled.lua
+nvim/spell
