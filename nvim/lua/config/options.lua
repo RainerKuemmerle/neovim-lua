@@ -39,9 +39,9 @@ opt.cmdheight=2               -- Cmd line height
 -- Tabs, indent
 -----------------------------------------------------------
 opt.expandtab = true        -- Use spaces instead of tabs
-opt.tabstop = 4             -- Number of spaces for a tab
-opt.softtabstop = 4         -- Number of spaces for a tab when editing
-opt.shiftwidth = 4          -- Number of spaces when autoindent
+opt.tabstop = 2             -- Number of spaces for a tab
+opt.softtabstop = 2         -- Number of spaces for a tab when editing
+opt.shiftwidth = 2          -- Number of spaces when autoindent
 opt.smartindent = true      -- Autoindent new lines
 
 -----------------------------------------------------------
