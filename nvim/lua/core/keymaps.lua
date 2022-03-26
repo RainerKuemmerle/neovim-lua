@@ -18,10 +18,13 @@ vim.g.mapleader = ','
 -----------------------------------------------------------
 
 -- Disable arrow keys
-map('', '<up>', '<nop>')
-map('', '<down>', '<nop>')
-map('', '<left>', '<nop>')
-map('', '<right>', '<nop>')
+-- map('', '<up>', '<nop>')
+-- map('', '<down>', '<nop>')
+-- map('', '<left>', '<nop>')
+-- map('', '<right>', '<nop>')
+
+-- Clear search highlighting with <leader> and c
+map('n', '<leader>c', ':nohl<CR>')
 
 -- Map Esc to kk
 map('i', 'kk', '<Esc>')
