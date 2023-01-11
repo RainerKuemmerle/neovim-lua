@@ -80,3 +80,11 @@ autocmd('BufLeave', {
   pattern = 'term://*',
   command = 'stopinsert'
 })
+
+-- Spell check for gitcommit
+augroup('setSpell', { clear = true })
+autocmd('Filetype', {
+  group = 'setSpell',
+  pattern = { 'gitcommit' },
+  command = 'setlocal spell'
+})
