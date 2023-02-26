@@ -317,5 +317,39 @@ lazy.setup({
         'saadparwaiz1/cmp_luasnip',
       },
     },
+
+   -- Git labels
+    {
+      'lewis6991/gitsigns.nvim',
+      dependencies = { 'nvim-lua/plenary.nvim' },
+      config = function()
+        require('gitsigns').setup{}
+      end
+    },
+
+    -- Dashboard (start screen)
+    {
+      'goolord/alpha-nvim',
+      dependencies = { 'kyazdani42/nvim-web-devicons' },
+    },
+
+    -- Plugins for Rainer's setup
+    -- LaTeX
+    { 'lervag/vimtex' },
+
+    -- git commit
+    { 'rhysd/committia.vim' },
+
+    -- comment
+    {
+      'numToStr/Comment.nvim',
+      config = function()
+        require('Comment').setup()
+      end
+    },
+
+    -- open file at the last position
+    { 'farmergreg/vim-lastplace' },
+
   },
 })
