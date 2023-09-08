@@ -180,5 +180,8 @@ lazy.setup({
     -- open file at the last position
     { 'farmergreg/vim-lastplace' },
 
+    -- colorize buffer
+    { 'm00qek/baleia.nvim', tag = 'v1.4.0', lazy = true },
+
   },
 })
