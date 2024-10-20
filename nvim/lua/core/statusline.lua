@@ -23,7 +23,7 @@ require('lualine').setup {
   -- https://github.com/nvim-lualine/lualine.nvim#global-options
   options = {
     icons_enabled = true,
-    theme = 'onedark',
+    theme = 'auto',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
