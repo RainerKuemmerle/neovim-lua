@@ -12,7 +12,7 @@ Insert preferred color scheme in the `color_scheme` variable.
 Color scheme is loaded at "Load color scheme" after settings sections, setup
 must be called before loading.
 --]]
-local status_ok, color_scheme = pcall(require, 'onedark')
+local status_ok, color_scheme = pcall(require, 'catppuccin')
 if not status_ok then
   return
 end
@@ -60,6 +60,10 @@ require('kanagawa').setup {
     },
 }
 
+require("catppuccin").setup({
+  flavour = "frappe",
+})
+
 --[[
 Load color scheme:
 Note: The instruction to load the color scheme may vary depending on the
@@ -67,8 +71,8 @@ package.
 See the README of the color scheme (i.e. git package) for information, for
 example: require('color_scheme').setup{}, vim.cmd('color_scheme')
 --]]
-require('onedark').load()
+vim.cmd("colorscheme catppuccin")
+--require('onedark').load()
 --vim.cmd("colorscheme kanagawa")
 --require('monokai').setup {}
 --vim.cmd("colorscheme rose-pine")
-
