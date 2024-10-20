@@ -56,19 +56,12 @@ lazy.setup({
     server = "https://nvim-neorocks.github.io/rocks-binaries/",
   },
   spec = {
-    --[[
-    Colorscheme:
-    The colorscheme should be available when starting Neovim.
-    Current available color schemes: onedark, kanagawa, monokai, rose-pine
-    See: /nvim/lua/core/colors.lua
-    --]]
-    {
-      'navarasu/onedark.nvim',
-      lazy = false, -- make sure we load this during startup if it is your main colorscheme
-      priority = 1000, -- make sure to load this before all the other start plugins
-    },
+    -- Colorscheme:
+    -- The colorscheme should be available when starting Neovim.
+    { "catppuccin/nvim", name = "catppuccin", lazy = false, priority = 1000 },
 
     -- Other color schemes:
+    { 'navarasu/onedark.nvim', lazy = true },
     { 'rebelot/kanagawa.nvim', lazy = true },
     { 'tanvirtin/monokai.nvim', lazy = true },
     { 'https://github.com/rose-pine/neovim', name = 'rose-pine', lazy = true },
