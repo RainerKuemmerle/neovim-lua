@@ -20,3 +20,5 @@ require('plugins/nvim-cmp')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
 
+-- Extensions
+require('core/neovide')
