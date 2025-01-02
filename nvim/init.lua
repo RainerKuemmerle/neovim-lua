@@ -28,3 +28,6 @@ vim.lsp.enable({
   'ts_ls',
   'rust-analyzer'
 })
+
+-- Extensions
+require('config/neovide')
