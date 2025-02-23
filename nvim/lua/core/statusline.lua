@@ -69,11 +69,7 @@ require('lualine').setup {
     lualine_z = {}
   },
   tabline = {},
-  winbar = {
-    lualine_c = {
-      { 'filename', path=0 }
-    },
-  },
+  winbar = {},
   inactive_winbar = {},
   extensions = {}
 }
